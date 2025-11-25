@@ -1,0 +1,396 @@
+/* ======================== GERAL ======================== */
+
+/* Página principal */
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+/* Corrige sintaxe da cor */
+.dataTables_wrapper {
+  border-radius: 5px;
+  background-color: #ffffff; /* corrigido: faltava # */
+  padding: 1vw;
+  clear: both;
+  color: #14697f;
+}
+
+/* ======================================== */
+/* ========== CABEÇALHO SUPERIOR ========== */
+
+/* Imagem da logo */
+span#logo > img {
+  margin-left: 20px;
+  height: 2vw;
+  width: 2vw;
+}
+
+/* Container com texto à esquerda e à direita */
+#tjrn-container {
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+  display: flex;
+  align-items: center;
+}
+
+/* Link "tjrn.jus.br" à esquerda */
+a#tjrn {
+  color: #0f7864;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.15vw;
+  margin-left: 1vw;
+  margin-right: auto;
+}
+
+/* Texto "Tribunal..." à direita */
+p.tjrn-text {
+  padding-top: 0.5em;
+  color: #838583;
+  font-family: Inter;
+  font-size: 1vw;
+  font-style: normal;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 1vw;
+}
+
+/* Barra de separação com gradiente */
+hr.barra_cabecario {
+  margin: 0;
+  height: 5px;
+  background: linear-gradient(to right, #B8D272, #20A0CE);
+  border: 0;
+  box-sizing: content-box;
+  overflow: visible;
+}
+
+/* Pequena barra cinza de separação */
+hr.barrinha {
+  margin-top: 0.5vw;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+/* ======================================== */
+/* =============== TÍTULOS ================ */
+
+.titulo-painel {
+  display: flex;
+  align-items: center;
+  padding-right: 2vw;
+  margin-left: auto;
+}
+
+.row.nome-tela {
+  padding: 0;
+  padding-right: 0.2vw;
+  padding-left: 1vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+p.titulo_atualizacao {
+  margin: 0;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 0.7vw;
+  color: red;
+  text-align: left;
+  width: 100%;
+}
+
+p.titulo_completo {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 1.1vw;
+  color: #14697F;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+p.titulo_versao {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 0.5vw;
+  color: #14697F;
+  text-align: right;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+p.subtitulo {
+  font-family: 'Inter';
+  font-size: 0.7vw;
+  color: #14697F;
+}
+
+/* ======================================== */
+/* ============== CARDS =================== */
+
+.div-cards, .div-cards-linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5vw;
+  overflow: hidden;
+  padding-top: 0.5vw;
+}
+
+.info-box {
+  flex: 1 1 calc(16% - 1.5vw);
+  min-width: 290px;
+  max-width: 200px;
+  height: 6vw;
+  display: flex;
+  flex-direction: inline-grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #14697F;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px #2a7d96;
+  border-radius: 5px;
+}
+
+.info-box-content {
+  width: 100%;
+  padding: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span.info-box-icon {
+  padding: 0.5vw;
+  font-size: 2vw;
+}
+
+/* Cards com erros em vermelho */
+#erros-card_projetos_erro .info-box {
+  background-color: #ff3333 !important;
+  box-shadow: 1px 1px 5px 1px #ff3333;
+}
+
+#erros-card_projetos_sdata .info-box {
+  background-color: #ff4500 !important;
+  box-shadow: 1px 1px 5px 1px #ff4500;
+}
+
+/* ======================================== */
+/* =========== TÍTULOS GRÁFICOS =========== */
+
+div.titulo-grafico, div.titulo-grafico1 {
+  padding-top: 1vw;
+  display: flex;
+  background-color: #f6f8f9;
+  justify-content: center;
+}
+
+p.titulo-graf1, p.titulo-graf2, p.titulo-graf3 {
+  font-family: Inter;
+  font-size: 1vw;
+  font-weight: 600;
+  text-align: center;
+  color: #14697F;
+  width: 50%;
+  margin: 0;
+}
+
+p.titulo-graf3 {
+  margin-top: 1vw;
+  padding: 2vw 0 1vw;
+  background-color: #f6f8f9;
+}
+
+/* ======================================== */
+/* ============== GRÁFICOS ================ */
+
+.double-plot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+  padding: 0 1vw 1vw 1vw;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.plot1, .plot2 {
+  flex: 1;
+  max-width: 50%;
+}
+
+div.plot-container.plotly {
+  box-shadow: 1px 1px 2px #2a7d96;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.div-exp-plot-2 {
+  display: flex;
+  gap: 1vw;
+  align-items: stretch;
+  padding: 0 1vw 3vw 1vw;
+}
+
+.plot-reactable {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plot-plotly {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plot-plotly > div {
+  flex: 1;
+}
+
+/* ======================================== */
+/* ============== TABELAS ================= */
+
+/* Estilo externo da Tabela DT */
+div.datatables {
+  box-shadow: 1px 1px 2px #2a7d96;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Alinhamento do conteúdo das células à esquerda */
+table.dataTable tbody td {
+  text-align: left !important;
+}
+
+/* Botão de exportação */
+div.dt-buttons {
+  margin-top: 0.5vw;
+}
+
+/* Estilo do Reactable */
+.Reactable.ReactTable.rt-bordered {
+  font-size: 0.7vw;
+  padding: 0.5vw 1vw 1vw;
+  box-shadow: 1px 1px 2px #2a7d96;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #14697f;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.rt-pagination {
+  color: #14697f;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+/* ======================================== */
+/* ============== FILTROS ================= */
+
+div.filtro {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.5vw 1vw 0vw 1vw;
+  background-color: #f6f8f9;
+  color: #14697F;
+  font-family: Inter;
+  font-size: 1vw;
+  gap: 1vw;
+}
+
+.shiny-options-group {
+  font-size: 0.9vw;
+}
+
+.shiny-input-container:not(.shiny-input-container-inline) {
+  font-size: 1vw;
+  font-family: 'Inter';
+  color: #2a7d96;
+  display: inline-grid;
+  width: 24vw;
+  max-width: 100%;
+  text-align: left; /* Corrigido: alinhamento do valor do input */
+  padding-left: 1vw;
+}
+
+/* ======================================== */
+/* ============ NAVBAR ==================== */
+
+.navbar {
+  z-index: 10;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  box-shadow: 1px 1px 2px #2a7d96;
+}
+
+nav.navbar.navbar-default.navbar-static-top .container-fluid {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #14697F;
+  background-color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #BED255;
+  text-decoration-thickness: 1px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #14697F;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-default .navbar-brand {
+  background: linear-gradient(to right, #b7d273, #22a0cd);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Inter';
+  font-weight: bolder;
+  font-size: 2vw;
+}
+
+.brand,
+.navbar > .container-fluid .navbar-brand {
+  margin-left: -15px;
+  font-size: 1.5vw;
+}
+
+div.navbar-header {
+  font-size: 2vw;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+nav.navbar.navbar-default.navbar-static-top + .container-fluid {
+  background-color: #f6f8f9;
+}
